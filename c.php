@@ -15,7 +15,7 @@
 	<link href="/boostrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-	<link href="/__css/style.css" rel="stylesheet">
+	<link href="/__css/c_style.css" rel="stylesheet">
 
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]>
