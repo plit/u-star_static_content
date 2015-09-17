@@ -1,0 +1,61 @@
+body {color: #ebebec;}
+
+#bg {background: url('http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/shine.png') no-repeat;
+    position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
+
+.bc_b06 {background-color: rgba(0, 0, 16, 0.6);width: 100%;}
+.site_width {max-width: 1180px;margin: 0 auto;}
+
+
+#background_cycler {padding: 0; margin: 0; width: 100%; position: absolute; top: 0; left: 0; z-index: -1;}
+#background_cycler img {position: absolute; left: 0; top: 0; width: 100%; z-index: 1; background-color: white;}
+#background_cycler img.active {z-index: 3}
+
+
+.navbar-default {border: 0;background-color: rgba(0, 0, 16, 0.6);}
+.navbar-default a.kep {margin: 0;padding: 1em;float: left;}
+.navbar-default img.kep {width: 1em;}
+#navbar .menu_list {width: 70%}
+#navbar .menu_list li {width: 30%}
+#navbar li {padding: 0 1em;text-align: center;}
+#navbar li a {color: #ebebec;font-weight: bold}
+#navbar .active a {background-color: transparent;}
+.navbar-brand {padding: 0;}
+.navbar-brand img {height: 45px;display: block;float: left;}
+
+
+.container-fluid.c_body {padding: 4em 0 0 0;}
+
+section.bc_b06 {margin-top: 11%}
+section.bc_b06 .row {padding: 4em 0;}
+.content_text_box {font-weight: bold;}
+.content_text_box span {font-size: 1.2em;}
+
+#mob_img_box {width: 200px;position: relative;margin: -100px auto 0 auto;text-align: center;min-height: 50px;}
+#mob_img_box img {width: 200px;position: absolute;top: 0;left: 0;z-index: 0;}
+#mob_img_box img.active {z-index: 1}
+
+
+
+footer {position: fixed;bottom: 0;line-height: 3em;}
+footer a {color: #ebebec;font-weight: bold;}
+footer a:hover {color: #ebebec;}
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1250px) {
+    #background_cycler img {width: 100%;}
+}
+@media (min-width: 240px) and (max-width: 768px) {
+
+    #bg {background-size: auto 100%;}
+    #background_cycler img {width: auto;}
+    #navbar {background-color: rgba(0, 0, 16, 0.8);}
+    #navbar .menu_list {width: 100%}
+    #navbar .menu_list li {width: 100%;text-align: left;}
+    #mob_img_box {margin: 0 auto;}
+}
