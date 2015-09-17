@@ -20,6 +20,7 @@ body {color: #ebebec;}
 #navbar li {padding: 0 1em;text-align: center;}
 #navbar li a {color: #ebebec;font-weight: bold}
 #navbar .active a {background-color: transparent;}
+#navbar .active a:hover {color: #42C0FF;}
 .navbar-brand {padding: 0;}
 .navbar-brand img {height: 45px;display: block;float: left;}
 
@@ -39,7 +40,7 @@ section.bc_b06 .row {padding: 4em 0;}
 
 footer {position: fixed;bottom: 0;line-height: 3em;}
 footer a {color: #ebebec;font-weight: bold;}
-footer a:hover {color: #ebebec;}
+footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
 
