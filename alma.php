@@ -1,5 +1,5 @@
 <?php
 
 echo 'alma';
-// akarmi - R commit
+echo 'korte';
 ?>
