@@ -101,6 +101,15 @@ var loadPage = (function ($) {
         loadFooter();
     };
 
+    my.first_season = function() {
+        $('body').css('background', 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
+            'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
+        loadNav();
+        //loadBg();
+        loadContent('__ajax/i_content_first_season.html');
+        loadFooter();
+    };
+
     my.contact = function() {
         loadNav();
         loadBg();
@@ -145,6 +154,9 @@ $(document).ready(function () {
     }
     else if (file.indexOf('contact') != -1 || getQueryVariable('go') == 'contact') {
         loadPage.contact();
+    }
+    else if (file.indexOf('first_season') != -1 || getQueryVariable('go') == 'first_season') {
+        loadPage.first_season();
     }
     else {
         loadPage.home();
