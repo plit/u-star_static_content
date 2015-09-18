@@ -77,6 +77,7 @@ var loadPage = (function ($) {
 
     function loadFooter() {
         loadAndReplaceContent('footer', '__ajax/i_footer.html', function(){
+            $('.c_body').css('min-height', (window.innerHeight - 95) + 'px');
         });
     }
 
@@ -84,6 +85,8 @@ var loadPage = (function ($) {
         ajax = ajax || '__ajax/i_content_home.html';
         loadAndReplaceContent('content', ajax, callback);
     }
+
+
 
     my.home = function() {
         loadNav();
