@@ -52,13 +52,14 @@ var loadPage = (function ($) {
         //privateMethod();
     };
 
-    function loadNav() {
+    function loadNav(func) {
         loadAndReplaceContent('nav', '__ajax/i_nav.html', function() {
             $("a.kep img.kep").hover(function (i) {//console.log(i + 'hover');
                 $(this).attr("src", $(this).attr("src").replace('normal', 'hover'));
             }, function (i) {//console.log(i + 'hover e');
                 $(this).attr("src", $(this).attr("src").replace('hover', 'normal'));
             });
+            func();
         });
     }
 
@@ -75,9 +76,10 @@ var loadPage = (function ($) {
         });
     }
 
-    function loadFooter() {
+    function loadFooter(func) {
         loadAndReplaceContent('footer', '__ajax/i_footer.html', function(){
             $('.c_body').css('min-height', (window.innerHeight - 95) + 'px');
+            func();
         });
     }
 
@@ -89,10 +91,14 @@ var loadPage = (function ($) {
 
 
     my.home = function() {
-        loadNav();
+        loadNav(function(){
+            $('.navbar').addClass('navbar-fixed-top')
+        });
         loadBg();
         loadContent();
-        loadFooter();
+        loadFooter(function(){
+            $('footer.bc_b06').css('position', 'fixed');
+        });
     };
 
     my.who_we_are = function() {
@@ -143,6 +149,7 @@ function getQueryVariable(variable) {
     //console.log('Query Variable ' + variable + ' not found');
 }
 
+
 $(document).ready(function () {
 
     //loadimg();
@@ -162,6 +169,7 @@ $(document).ready(function () {
         loadPage.first_season();
     }
     else {
+
         loadPage.home();
     }
 
