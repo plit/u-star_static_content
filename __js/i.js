@@ -93,8 +93,10 @@ var loadPage = (function ($) {
     };
 
     my.who_we_are = function() {
+        $('body').css('background', 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
+            'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
         loadNav();
-        loadBg();
+        //loadBg();
         loadContent('__ajax/i_content_who_we_are.html');
         loadFooter();
     };
