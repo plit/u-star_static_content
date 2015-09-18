@@ -99,6 +99,13 @@ var loadPage = (function ($) {
         loadFooter();
     };
 
+    my.contact = function() {
+        loadNav();
+        loadBg();
+        loadContent('__ajax/i_content_contact.html');
+        loadFooter();
+    };
+
 
 
 
@@ -119,7 +126,7 @@ function getQueryVariable(variable) {
             return pair[1];
         }
     }
-    alert('Query Variable ' + variable + ' not found');
+    //console.log('Query Variable ' + variable + ' not found');
 }
 
 $(document).ready(function () {
@@ -131,8 +138,11 @@ $(document).ready(function () {
     var file = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
     console.log(file);
 
-    if (file == 'i_who_we_are.html' || getQueryVariable('go') == 'who_we_are') {
+    if (file.indexOf('i_who_we_are') != -1 || getQueryVariable('go') == 'who_we_are') {
         loadPage.who_we_are();
+    }
+    else if (file.indexOf('contact') != -1 || getQueryVariable('go') == 'contact') {
+        loadPage.contact();
     }
     else {
         loadPage.home();
