@@ -20,7 +20,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
 .navbar-default img.kep {height: 1.4em;}
 #navbar .menu_list {width: 70% ; font-size: 1.2em;}
 #navbar .menu_list li {width: 25%}
-#navbar li {padding: 0 0;text-align: center; text}
+#navbar li {padding: 0 0;text-align: center;}
 #navbar li a {color: #ebebec;font-weight: bold}
 #navbar .active a {background-color: transparent;}
 #navbar a:hover {color: #42C0FF;}
@@ -76,4 +76,5 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
     #navbar .menu_list li {width: 100%;text-align: left;}
     #mob_img_box {margin: 0 auto;}
     .youtube_box_center iframe {width: 90%;}
+    .home_black_box {padding: 2em 1em;}
 }
