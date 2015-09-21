@@ -45,13 +45,19 @@ section.bc_b06 .row {padding: 0;}
 .content_text_box {font-weight: bold;}
 .content_text_box span {font-size: 1.2em;}
 
+.contact_text_a a:active,
+.contact_text_a a:link,
+.contact_text_a a:visited {color: white;}
+.contact_text_a a:hover {color: #42C0FF; text-decoration: none;}
+
+span {font-size: 1.2em;}
+
 #mob_img_box {width: 250px;position: relative;margin: -50px auto 0 auto;text-align: center;min-height: 50px;}
 #mob_img_box img {width: 200px;position: absolute;top: 0;left: 0;z-index: 0;}
 #mob_img_box img.active {z-index: 1}
 
 .home_black_box {padding: 2em 0;}
 .home_black_box h1 {font-size: 2.2em;}
-
 
 
 footer {position: relative;bottom: 0;line-height: 3em;}
@@ -76,5 +82,5 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
     #navbar .menu_list li {width: 100%;text-align: left;}
     #mob_img_box {margin: 0 auto;}
     .youtube_box_center iframe {width: 90%;}
-    .home_black_box {padding: 2em 1em;}
+    .home_black_box {padding: 2em 0;}
 }
