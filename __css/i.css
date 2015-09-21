@@ -16,10 +16,10 @@ a, a:hover, a:active, a:focus {outline: 0;}
 .navbar {margin-bottom: 0;}
 .navbar-default {border: 0;background-color: rgba(0, 0, 16, 0.6);}
 .navbar-default a.kep {margin: 0;padding: 1em;float: left;}
-.navbar-default img.kep {width: 1em;}
+.navbar-default img.kep {height: 1.4em;}
 #navbar .menu_list {width: 70%}
 #navbar .menu_list li {width: 30%}
-#navbar li {padding: 0 1em;text-align: center;}
+#navbar li {padding: 0 1em;text-align: center; text}
 #navbar li a {color: #ebebec;font-weight: bold}
 #navbar .active a {background-color: transparent;}
 #navbar a:hover {color: #42C0FF;}
