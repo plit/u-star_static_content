@@ -40,7 +40,8 @@ function loadAndReplaceContent(id, url, callback) {
 var loadPage = (function ($) {
     var jQuery = $;
     var my = {},
-        privateVariable = 1;
+        privateVariable = 1,
+        is_mobile = window.innerWidth < 768;
 
     function privateMethod() {
         // ...
@@ -95,9 +96,12 @@ var loadPage = (function ($) {
             $('.navbar').addClass('navbar-fixed-top')
         });
         loadBg();
-        loadContent();
+        loadContent(undefined, function() {
+            is_mobile && $('section.bc_b06').css('margin-top', (Math.round(window.innerWidth * 0.5625) - 65) + 'px');
+        });
         loadFooter(function(){
-            $('footer.bc_b06').css('position', 'fixed');
+            // $('footer.bc_b06').css('position', 'fixed');
+            is_mobile && $('footer').css('margin-top', '6em');
         });
     };
 
