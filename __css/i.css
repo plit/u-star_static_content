@@ -61,6 +61,8 @@ span {font-size: 1.2em;}
 
 .social_img {padding-right: 0.2em;}
 
+#alphabetic_ul ul{list-style-type: upper-alpha;}
+#alphabetic_ul li{margin: 1em 0;}
 
 footer {position: relative;bottom: 0;line-height: 3em;}
 footer a {color: #ebebec;font-weight: bold;}
