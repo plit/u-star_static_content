@@ -18,8 +18,8 @@ a, a:hover, a:active, a:focus {outline: 0;}
 .navbar-default {border: 0;background-color: rgba(0, 0, 16, 0.6);}
 .navbar-default a.kep {margin: 0;padding: 1em 0.6em;float: left;}
 .navbar-default img.kep {height: 1.4em;}
-#navbar .menu_list {width: 83% ; font-size: 1.1em;}
-#navbar .menu_list li {width: 20%}
+#navbar .menu_list {width: 75% ; font-size: 1.1em;}
+#navbar .menu_list li {padding: 0 0.3em;}
 #navbar li {padding: 0 0;text-align: center;}
 #navbar li a {color: #ebebec;font-weight: bold}
 #navbar .active a {background-color: transparent;}
