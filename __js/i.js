@@ -54,7 +54,7 @@ var loadPage = (function ($) {
     };
 
     function loadNav(func) {
-        loadAndReplaceContent('nav', '__ajax/i_nav.html', function() {
+        loadAndReplaceContent('nav', '__ajax/i/i_nav.html', function() {
             $("a.kep img.kep").hover(function (i) {//console.log(i + 'hover');
                 $(this).attr("src", $(this).attr("src").replace('normal', 'hover'));
             }, function (i) {//console.log(i + 'hover e');
@@ -65,7 +65,7 @@ var loadPage = (function ($) {
     }
 
     function loadBg() {
-        loadAndReplaceContent('background_cycler_box', '__ajax/i_bg.html', function(){
+        loadAndReplaceContent('background_cycler_box', '__ajax/i/i_bg.html', function(){
             $('#background_cycler').css('opacity', 0);
             $('#background_cycler').fadeTo( "slow" , 1, function() {
                 // Animation complete.
@@ -78,14 +78,14 @@ var loadPage = (function ($) {
     }
 
     function loadFooter(func) {
-        loadAndReplaceContent('footer', '__ajax/i_footer.html', function(){
+        loadAndReplaceContent('footer', '__ajax/i/i_footer.html', function(){
             $('.c_body').css('min-height', (window.innerHeight - 95) + 'px');
             func();
         });
     }
 
     function loadContent(ajax, callback) {
-        ajax = ajax || '__ajax/i_content_home.html';
+        ajax = ajax || '__ajax/i/i_content_home.html';
         loadAndReplaceContent('content', ajax, callback);
     }
 
@@ -110,7 +110,7 @@ var loadPage = (function ($) {
             'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i_content_who_we_are.html');
+        loadContent('__ajax/i/i_content_who_we_are.html');
         loadFooter();
     };
 
@@ -119,7 +119,7 @@ var loadPage = (function ($) {
             'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i_content_first_season.html');
+        loadContent('__ajax/i/i_content_first_season.html');
         loadFooter();
     };
 
@@ -128,7 +128,7 @@ var loadPage = (function ($) {
              'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i_content_terms.html');
+        loadContent('__ajax/i/i_content_terms.html');
         loadFooter();
     };
 
@@ -137,14 +137,14 @@ var loadPage = (function ($) {
              'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i_content_privacy.html');
+        loadContent('__ajax/i/i_content_privacy.html');
         loadFooter();
     };
 
     my.contact = function() {
         loadNav();
         loadBg();
-        loadContent('__ajax/i_content_contact.html');
+        loadContent('__ajax/i/i_content_contact.html');
         loadFooter();
     };
 

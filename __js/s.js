@@ -65,7 +65,7 @@ var loadPage = (function ($) {
 	}
 
 	function loadBg() {
-		loadAndReplaceContent('background_cycler_box', '__ajax/i_bg.html', function () {
+		loadAndReplaceContent('background_cycler_box', '__ajax/i/i_bg.html', function () {
 			$('#background_cycler').css('opacity', 0);
 			$('#background_cycler').fadeTo("slow", 1, function () {
 				// Animation complete.
@@ -78,7 +78,7 @@ var loadPage = (function ($) {
 	}
 
 	function loadFooter(callback) {
-		loadAndReplaceContent('footer', '__ajax/i_footer.html', function () {
+		loadAndReplaceContent('footer', '__ajax/s/footer.html', function () {
 			$('.c_body').css('min-height', (window.innerHeight - 95) + 'px');
 			callback && callback();
 
