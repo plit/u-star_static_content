@@ -5,6 +5,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
 #bg {background: url('http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/shine.png') no-repeat;
     position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
 
+.dn {display: none;}
 .bc_b06 {background-color: rgba(0, 0, 16, 0.6);width: 100%;}
 
 .lp_tv5,
@@ -33,7 +34,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
 
 
 
-footer {position: relative;bottom: 0;line-height: 3em;}
+footer {position: relative;bottom: 0;line-height: 3em;color: #42C0FF;}
 footer a {color: #ebebec;font-weight: bold;}
 footer a:hover {color: #42C0FF;text-decoration: none;}
 
@@ -49,6 +50,17 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .home_box .news > div > div {border: silver solid 1px;padding: 1em;}
 .home_box .news .read_more {display: block;text-align: right;}
 
+
+
+.vertical-content {width: 10000px;-webkit-transition-property: margin-left;-webkit-transition-duration: 0.4s;-webkit-transition-timing-function: ease-in;
+	-moz-transition: margin-left 0.4s ease-in;-o-transition: margin-left 0.4s ease-in;-ms-transition: margin-left 0.4s ease-in;}
+
+.box.featured .slider_content {width: 100%;overflow: hidden;position: relative;height: 300px;}
+.box.featured .vertical-content {position: absolute;left: 0px;margin-left: 0;}
+.box.featured .vcontent {width: 630px;float: left;}
+.box.featured .carousel {position: absolute;bottom: .1em;right: .3em;}
+.box.featured .carousel li {float: left;list-style-type: none;background-color: #c0c0c0;margin: .1em;padding: 0 0.5em;}
+.box.featured .carousel li.selected {background-color: cornsilk;}
 
 
 

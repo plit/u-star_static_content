@@ -69,6 +69,16 @@ footer a {color: #ebebec;font-weight: bold;}
 footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
+.contact_form {}
+.contact_form input,
+.contact_form button,
+.contact_form textarea {color: #3f444a;width: 300px;}
+.contact_form label {width: 100px;text-align: right;}
+.contact_form .formfield * {vertical-align: top;}
+.contact_form .error_text {color: red;padding: .2em;margin: .2em;}
+
+
+
 
 
 

@@ -1,7 +1,106 @@
-<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/Jssor.Slider.FullPack/img/landscape/01.jpg" alt="valami" />
-ide jöhet pl <a href="http://www.jssor.com/" target="_blank">http://www.jssor.com/</a>
+<article class="col-md-12 slide">
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+
+
+			<!--<div class="box featured">-->
+				<!--<div class="slider_content">-->
+					<!--<div class="vertical-content">-->
+						<!--<div class="vcontent"><img class="dn0" src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/Jssor.Slider.FullPack/img/landscape/01.jpg" alt="valami"/></div>-->
+						<!--<div class="vcontent"><img class="dn0" src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/Jssor.Slider.FullPack/img/landscape/02.jpg" alt="valami"/></div>-->
+						<!--<div class="vcontent"><img class="dn0" src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/Jssor.Slider.FullPack/img/landscape/03.jpg" alt="valami"/></div>-->
+					<!--</div>-->
+					<!--<ul class="carousel">-->
+						<!--<li class="selected">1</li>-->
+						<!--<li>2</li>-->
+						<!--<li>3</li>-->
+					<!--</ul>-->
+					<!--&lt;!&ndash;button>Watch</button&ndash;&gt;-->
+				<!--</div>-->
+				<!--<div class="box-shadow"></div>-->
+			<!--</div>-->
+			<!--<script>-->
+				<!--var $ = jQuery;-->
+				<!--//Time in ms-->
+				<!--var wide_time = 8000;-->
+				<!--function featuredIntervalFunc() {-->
+					<!--var node = $('.box.featured .selected').next();-->
+					<!--//cl("featured " + node.index());-->
+					<!--if (node.index() == -1) node = $('.box.featured .carousel li').eq(0);-->
+					<!--var node2 = node.parent().parent().find('.vertical-content');-->
+					<!--node.parent().find('li').removeClass('selected');-->
+					<!--node.addClass('selected');-->
+					<!--node2.css('margin-left', node.index() * node2.find('.vcontent').width() * -1);-->
+				<!--}-->
+				<!--$('.carousel li').click(function () {-->
+					<!--cl('.carousel li clicked');-->
+					<!--var node = $(this).parent().parent().find('.vertical-content');-->
+					<!--$(this).parent().find('li').removeClass('selected');-->
+					<!--$(this).addClass('selected');-->
+					<!--node.css('margin-left', $(this).index() * node.find('.vcontent').width() * -1);-->
+
+					<!--cl($(this).parent().parent().parent().hasClass('featured'));-->
+
+					<!--if ($(this).parent().parent().hasClass('why')) {-->
+						<!--clearInterval(whyInterval);-->
+						<!--whyInterval = setInterval(whyIntervalFunc, thin_time);-->
+					<!--}-->
+					<!--if ($(this).parent().parent().parent().hasClass('featured')) {-->
+						<!--clearInterval(featuredInterval);-->
+						<!--featuredInterval = setInterval(featuredIntervalFunc, wide_time);-->
+					<!--}-->
+				<!--});-->
+				<!--var featuredInterval = setInterval(featuredIntervalFunc, wide_time);-->
+			<!--</script>-->
+
+
+			<link href="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/css/classic/cubeslider.css"
+				  rel="stylesheet" type="text/css" />
+			<div id="cs-slider">
+				<a href="http://www.albanx.com/" target="_blank">
+					<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/1.jpg"/>
+					<div class="cs-title"> 3d Abstract from Codecanyon</div>
+				</a>
+				<a href="http://www.google.com/" target="_blank">
+					<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/2.jpg" title="Evanto Marketplace"/>
+					<div class="cs-title">Evanto Marketplace</div>
+				</a>
+
+				<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/3.jpg" title="Cube Slider"/>
+				<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/4.jpg" title="The css3 slider"/>
+				<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/5.jpg" title="Great fallback for IE"/>
+				<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/6.jpg" title="Fast and simple"/>
+				<img src="http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/images2/7.jpg" title="Images from codecanyon"/>
+			</div>
+
+			<script>
+				loadScript('http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/vendor/cubeslider-free/js/cubeslider-min.js', function(){
+					cln('cubeslider-min.js')
+					$('#cs-slider').cubeslider({
+						cubesNum: 		{rows:5, cols:1},
+						orientation:	'h',
+						spreadPixel		:0,
+						cubeSync		:100,
+						perspective		:600,
+						autoplayInterval:2000
+					});
+				})
+			</script>
+			<div style="width: 1px;clear: both;height: 2em;"> </div>
 
 
 
-<div id="showBannerPosition_10"><img src="http://www.risingstars.asia/ph/rdr/images/banner-sitelevel.png"></div>
-<script type="text/javascript">rsBanners.getBanner(10);</script>
+
+
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+
+			<div id="showBannerPosition_11"><div style="width: 100%;height: 240px;background-color: #c0c0c0;margin-top: 2em;"></div></div>
+			<script type="text/javascript">rsBanners.getBanner(11);</script>
+
+		</div>
+	</div>
+</article>
+
+

@@ -8,6 +8,67 @@
 					<span class="contact_text_a" style="color: #e0e0e0;">Andrew Gonczi, CEO, RisingStars Asia Online Pte. Ltd.<br />
 					<a href="mailto:andrew.gonczi@risingstars.asia">andrew.gonczi@risingstars.asia</a></span>
 				</span>
+
+				<form method="post" class="contact_form" name="contact_form" onsubmit="return validateCForm()" id="contact_form"
+					  action="http://www.rising-stars.asia/ph/tool/contact.php">
+					<p class="formfield">
+						<label for="f_name">name</label>
+						<input type="text" name="f_name" id="f_name" value="" placeholder="Name"><br>
+					</p>
+					<p class="formfield">
+						<label for="f_email">email</label>
+						<input type="text" name="f_email" id="f_email" value="" placeholder="Email"><br>
+					</p>
+					<p class="formfield">
+						<label for="f_subject">Subject</label>
+						<input type="text" name="f_subject" id="f_subject" value="" placeholder="Subject"><br>
+					</p>
+					<p class="formfield">
+						<label for="f_message">Message</label>
+						<textarea id="f_message" name="f_message"></textarea>
+					</p>
+					<div class="error_text"></div>
+					<input type="submit" value="Submit">
+				</form>
+				<div id="sended_true" class="dn"> TY :)</div>
+				<script>
+					function validateCForm() {
+						var f_email = document.forms["contact_form"]["f_email"].value;
+						var f_message = document.forms["contact_form"]["f_message"].value;
+						if (!validateEmail(f_email)) {
+							$('.error_text').html('Email: not valid');
+							return false;
+						}
+						if (f_message.length < 20) {
+							$('.error_text').html('Message: a minimum of 20 characters');
+							return false;
+						}
+						send_mail();
+						return false;
+					}
+					function send_mail() {
+						console.log('send_mail');
+						console.log('send_mail');
+						var postData = $('#contact_form').serializeArray();
+						var formURL = $('#contact_form').attr("action");
+						$.ajax(
+								{
+									url: formURL,
+									type: "POST",
+									data: postData,
+									success: function (data, textStatus, jqXHR) {
+										//data: return data from server
+										$('#sended_true').show();
+										$('#contact_form').hide();
+										return false;
+									},
+									error: function (jqXHR, textStatus, errorThrown) {
+										//if fails
+									}
+								});
+
+					}
+				</script>
 			</div>
 		</div>
 	</section>
