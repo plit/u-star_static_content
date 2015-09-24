@@ -6,18 +6,20 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
 				<span>
 					<span class="contact_text_a" style="color: #e0e0e0;">
-                        Andrew Gonczi, CEO, <br />RisingStars Asia Online Pte. Ltd.<br />
+                        <br /><br />
+                        To get in touch with the RisingStars team, <br />
+                        please fill out the form below. <br /><br />
 					</span>
 				</span>
 
 				<form method="post" class="contact_form" name="contact_form" onsubmit="return validateCForm()" id="contact_form"
 					  action="http://www.risingstars.asia/ph/tool/contact.php">
 					<p class="formfield">
-						<label for="f_name">name</label>
+						<label for="f_name">Name</label>
 						<input type="text" name="f_name" id="f_name" value="" placeholder="Name"><br>
 					</p>
 					<p class="formfield">
-						<label for="f_email">email</label>
+						<label for="f_email">Email</label>
 						<input type="text" name="f_email" id="f_email" value="" placeholder="Email"><br>
 					</p>
 					<p class="formfield">
@@ -28,10 +30,12 @@
 						<label for="f_message">Message</label>
 						<textarea id="f_message" name="f_message"></textarea>
 					</p>
-					<div class="error_text"></div>
+					<div class="error_text"> </div>
+                    <label for="f_subject"> </label>
 					<input type="submit" value="Submit">
+                    <br /> <br /> <br />
 				</form>
-				<div id="sended_true" class="dn"> TY :)</div>
+				<div id="sended_true" class="dn"> </div>
 				<script>
 					function validateCForm() {
 						var f_email = document.forms["contact_form"]["f_email"].value;
