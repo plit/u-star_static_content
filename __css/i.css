@@ -6,6 +6,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
     position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
 
 .bc_b06 {background-color: rgba(0, 0, 16, 0.6);width: 100%;}
+.dn {display: none;}
 .container,
 .site_width {max-width: 970px;margin: 0 auto;}
 
