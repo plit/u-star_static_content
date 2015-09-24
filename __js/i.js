@@ -105,12 +105,12 @@ var loadPage = (function ($) {
         });
     };
 
-    my.who_we_are = function() {
+    my.about = function() {
         $('body').css('background', 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
             'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i/i_content_who_we_are.html');
+        loadContent('__ajax/i/i_content_about.html');
         loadFooter();
     };
 
@@ -193,8 +193,8 @@ $(document).ready(function () {
     var file = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
     console.log(file);
 
-    if (file.indexOf('i_who_we_are') != -1 || getQueryVariable('go') == 'who_we_are') {
-        loadPage.who_we_are();
+    if (file.indexOf('i_about') != -1 || getQueryVariable('go') == 'about') {
+        loadPage.about();
     }
     else if (file.indexOf('contact') != -1 || getQueryVariable('go') == 'contact') {
         loadPage.contact();
