@@ -2,10 +2,12 @@ body {color: #ebebec;}
 
 a, a:hover, a:active, a:focus {outline: 0;}
 
+p {text-align: justify;}
+
 #bg {background: url('http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/shine.png') no-repeat;
     position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
 
-.bc_b06 {background-color: rgba(0, 0, 16, 0.6);width: 100%;}
+.bc_b06 {background-color: rgba(0, 0, 16, 0.6);width: 100%; }
 .dn {display: none;}
 .container,
 .site_width {max-width: 970px;margin: 0 auto;}
@@ -36,7 +38,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
 .container.c_body section.bc_b06 .row > div {margin: 1em 0;}
 .container.c_body section.bc_b06 h2 {color: #3f444a;}
 .container.c_body section.bc_b06 span {color: #d71d5c;}
-.container.c_body section.bc_b06 p {line-height: 1.8em;}
+.container.c_body section.bc_b06 p {line-height: 1.8em; }
 .border_left_silver {border-left: 9px solid #e0e0e0;}
 .container.c_body section.bc_b06 hr {clear: both;display: block;height: 1px;width: 100%;margin: 10px auto;background-color: #e0e0e0;}
 
@@ -75,8 +77,8 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .contact_form button,
 .contact_form textarea {color: #3f444a;width: 300px;}
 .contact_form label {width: 60px;text-align: right;}
-.contact_form .formfield * {vertical-align: top;}
-.contact_form .formfield2 * {vertical-align: top;min-height: 6em;}
+.contact_form .formfield * {vertical-align: top; text-align: center;}
+.contact_form .formfield2 * {vertical-align: top; min-height: 6em; }
 .contact_form .error_text {color: red;padding: .2em;margin: .2em;}
 
 
