@@ -65,9 +65,10 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
 .slide .cs-container .cs-nav-cont {visibility: hidden;}
-.slide .cs-container .cs-nav-play {bottom: 0.5em; right: 0.5em;}
-.slide .cs-container .cs-title {line-height: 1.5em; padding: 0.3em 0.5em; font-style: normal; font-family: Roboto,Arial,Helvetica,sans-serif; font-size: 1.2em;}
-
+.slide .cs-container .cs-nav-play {bottom: 0.5em; right: 0.5em; }
+.slide .cs-container .cs-title {line-height: 1.5em; padding: 0.3em 0.5em; font-style: normal; font-family: Roboto,Arial,Helvetica,sans-serif; font-size: 1.2em; bottom:1.6em; width:30em;}
+.slide .cs-container .cs-nav-prev,
+.slide .cs-container .cs-nav-next {visibility: hidden;}
 
 
 
