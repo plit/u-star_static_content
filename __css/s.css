@@ -40,14 +40,16 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
 .home_box {}
+.home_box article {clear: both;}
 .home_box .slide {width: 100%;min-height: 300px; padding-top: 1em;}
 .home_box .slide img {width: 100%;}
 .home_box .y_videos iframe {width: 100%;height: 315px;}
 .home_box .y_videos > div {padding: 1em 0;border-bottom: silver solid 1px; }
 .home_box .y_videos .video_text {min-height: 315px;line-height: 315px; text-align: justify;}
 .home_box .y_videos .video_text  span {display: inline-block;vertical-align: middle;line-height: 1.8em; font-size: 1.2em; text-align: justify;}
+.home_box .news {clear: both;}
 .home_box .news > div {padding: 1em;}
-.home_box .news > div > div {border: silver solid 1px;padding: 1em; text-align: justify;}
+.home_box .news > div > div {border: silver solid 1px;padding: 1em; text-align: justify;min-height: 12em;}
 .home_box .news .read_more {display: block;text-align: right;}
 
 .youtube_text_box {width: 80%; background-color: black; line-height: 1.5em; padding: 0.3em 0.5em; font-style: normal; font-family: Roboto,Arial,Helvetica,sans-serif; font-size: 1.2em;color: white; float: left; opacity: 0.8; position: absolute; bottom: 2em; }
