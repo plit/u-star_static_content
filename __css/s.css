@@ -23,7 +23,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
 .navbar-default {border: 0;background-color: rgba(0, 0, 16, 0.6);}
 .navbar-default a.kep {margin: 0;padding: 1em 0.6em;float: left;}
 .navbar-default img.kep {height: 1.4em;}
-#navbar .menu_list {width: 80% ; font-size: 1.2em; text-transform: uppercase;}
+#navbar .menu_list {width: 80% ; font-size: 1.1em; text-transform: uppercase;}
 #navbar .menu_list li {}
 #navbar li {padding: 0 0;text-align: center;}
 #navbar li a {color: #ebebec;font-weight: bold; padding: 15px 10px;}
