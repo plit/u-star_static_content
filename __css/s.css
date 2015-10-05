@@ -1,6 +1,7 @@
 body {color: #3f444a;}
 
-a, a:hover, a:active, a:focus {outline: 0;}
+a, a:hover, a:active, a:focus,
+button, button:hover, button:active, button:focus {outline: 0;}
 
 #bg {background: url('http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/shine.png') no-repeat;
     position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
@@ -14,6 +15,7 @@ a, a:hover, a:active, a:focus {outline: 0;}
 
 .bg_color_white {background-color: #fff;}
 
+.bl9 {border-left: 9px solid #e0e0e0;}
 
 #background_cycler {padding: 0; margin: 0; width: 100%; position: absolute; top: 0; left: 0; z-index: -1;}
 #background_cycler img {position: absolute; left: 0; top: 0; width: 100%; z-index: 1; background-color: white;}
@@ -79,11 +81,17 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
 
+.app_box {padding: 1em;}
+.app_box h1 {clear: both;margin: 2em 0;font-size: 2em;}
+.app_box .video_box {text-align: center;}
+.app_box .share_box {text-align: center;}
+.app_box .img_box {height: 16em;}
+.app_box .img_box img {width: 10em;display: block;position: absolute;top: 0;left: 10em;}
+.app_box .p_box {min-height: 16em;line-height: 16em;vertical-align: middle;}
+.app_box .p_box p {display: inline-block;vertical-align: middle;line-height: 1.5em;text-align: justify;}
 
 
-
-
-
+#share_box {padding: .5em;margin-top: -8000px;}
 
 
 
