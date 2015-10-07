@@ -7,7 +7,10 @@ button, button:hover, button:active, button:focus {outline: 0;}
     position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
 
 .dn {display: none;}
-.bc_b06 {background-color: rgba(0, 0, 16, 0.6);width: 100%;}
+.bc_b06 {background-color: rgba(0, 0, 16, 0.6);}
+.bc_g06 {background-color: rgba(34, 88, 103, 0.6);}
+.bc_o06 {background-color: rgba(210, 132, 102, 0.6);}
+.bc_r06 {background-color: rgba(206, 0, 74, 0.6);}
 
 .lp_tv5,
 .container,
@@ -94,11 +97,20 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 #share_box {padding: .5em;margin-top: -8000px;}
 
 
+.first_season_box {color: #ebebec;}
+.first_season_box .fs_title {position: relative;height: 3em;margin: 1em 0;}
+.first_season_box .fs_title h1 {}
+.first_season_box .fs_title div {position: absolute;height: 3em;width: 700px;top: 0;left: -700px;}
+.first_season_box .y_video_box {text-align: center;padding: 0 1em 0.5em 1em;}
+.first_season_box .y_video_box iframe {width: 100%;height: 240px;}
+.first_season_box .text_space {padding: .5em;font-size: .8em;text-align: justify;margin-bottom: 1em;}
+.first_season_box .text_space h2 {font-size: 1.8em;}
 
 
-
-
-
+.press_box {color: #ebebec;}
+.press_box article {margin-top: 2em;padding-bottom: 1em;}
+.press_box .fs_title {position: relative;height: 3em;margin: 1em 0;}
+.press_box .fs_title div {position: absolute;height: 3em;width: 700px;top: 0;left: -700px;}
 
 
 

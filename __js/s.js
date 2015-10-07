@@ -121,6 +121,9 @@ var loadPage = (function ($) {
 		if (settings['loadBg'] == 'true') {
 			loadBg();
 		}
+		if (settings['body_css_bg_img']) {
+			$('body').css('background', settings['body_css_bg_img']);
+		}
 		loadContent('__ajax/s/' + file_name + '.' + settings['file_type']);
 		loadFooter();
 	};
@@ -157,6 +160,16 @@ var sites_settings = {
 	},
 	"app": {
 		"file_type": 'html'
+	},
+	"first_season": {
+		"file_type": 'html',
+		"body_css_bg_img": 'silver url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
+			'img/backgrounds/shine.png") no-repeat  center center fixed'
+	},
+	"press": {
+		"file_type": 'html',
+		"body_css_bg_img": 'silver url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
+			'img/backgrounds/shine.png") no-repeat  center center fixed'
 	}
 };
 $(document).ready(function () {
