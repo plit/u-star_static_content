@@ -106,17 +106,17 @@ var loadPage = (function ($) {
     };
 
     my.about = function() {
-        $('body').css('background', 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
-            'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
+		loadPage.body_bg('#1F5D68 url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_about.jpg")' +
+		' no-repeat fixed center 3.5em / cover');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i/i_content_about.html');
+        loadContent('__ajax/i/i_content_about2.html');
         loadFooter();
     };
 
     my.first_season = function() {
 		loadPage.body_bg('#1A4168 url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_first_season.jpg")' +
-			' no-repeat  top center fixed');
+			' no-repeat  fixed center 3.5em ');
         loadNav();
         //loadBg();
         loadContent('__ajax/i/i_content_first_season2.html');
@@ -143,7 +143,8 @@ var loadPage = (function ($) {
 
     my.press = function() {
 		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_press.jpg")' +
-			' no-repeat  top center fixed');
+			' no-repeat fixed center top / cover');
+			//' no-repeat  top center fixed');
         loadNav();
         //loadBg();
         loadContent('__ajax/i/i_content_press2.html');
