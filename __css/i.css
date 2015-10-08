@@ -119,6 +119,7 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .press_box .print_scr.print_scr_full {height: auto;}
 .press_box .read_more_box {text-align: right;cursor: pointer;padding-top: 1em;font-weight: bold;}
 .press_box .read_more_content_g a {color: #A8A4D3;}
+.press_box .read_more_content_g p {font-size: 1em;}
 .press_box .read_more_content_g,
 .press_box .read_more_content_p {display: none}
 
