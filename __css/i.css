@@ -108,7 +108,7 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
 .press_box {color: #ebebec;}
-.press_box a {color: #42C0FF; font-weight: bold;}
+.press_box a {color: #ebebec; font-weight: bold;}
 .press_box article {margin-bottom: 2em;padding-bottom: 1em;text-align: justify;}
 .press_box .fs_title {position: relative;height: 3em;margin: 1em 0;padding: 0}
 .press_box .fs_title h1 {font-size: 2em;margin: 0.3em 0;}
