@@ -114,6 +114,7 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .press_box .fs_title h1 {font-size: 2em;margin: 0.3em 0;}
 .press_box .fs_title div {position: absolute;height: 3em;width: 700px;top: 0;left: -700px;}
 .press_box h2 {font-size: 1.5em;}
+.press_box h3 {font-size: 1.2em;}
 .press_box .print_scr {height: 17em;overflow: hidden;display: block;}
 .press_box .print_scr.print_scr_full {height: auto;}
 .press_box .read_more_box {text-align: right;cursor: pointer;padding-top: 1em;font-weight: bold;}
