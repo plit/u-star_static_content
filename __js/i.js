@@ -31,7 +31,7 @@ function loadAndReplaceContent(id, url, callback) {
         dataType: "html",
         success: function(response) {
             $("#" + id).replaceWith(response);
-            callback();
+			callback && callback();
         }
     });
 
@@ -60,7 +60,7 @@ var loadPage = (function ($) {
             }, function (i) {//console.log(i + 'hover e');
                 $(this).attr("src", $(this).attr("src").replace('hover', 'normal'));
             });
-            func();
+			func && func();
         });
     }
 
@@ -80,7 +80,7 @@ var loadPage = (function ($) {
     function loadFooter(func) {
         loadAndReplaceContent('footer', '__ajax/i/i_footer.html', function(){
             $('.c_body').css('min-height', (window.innerHeight - 95) + 'px');
-            func();
+			func && func();
         });
     }
 

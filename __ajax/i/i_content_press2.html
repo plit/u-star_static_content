@@ -9,9 +9,11 @@
 		   target="_blank" class="print_scr">
 			<img alt="www.streetinsider.com" style="width: 100%;"
 				 src="http://be47b4b2b5f5e9da2da4-d3df4c08c94860389f24a50eee704af8.r44.cf1.rackcdn.com/international/img/www.streetinsider.com-2015-09-24.jpg">
-			<div class="cb read_more_box" onclick="$('.print_scr').removeClass('print_scr_full');$(this).parent().next().show();return false;">Close</div>
+			<!--<div class="cb read_more_box" onclick="$('.print_scr').removeClass('print_scr_full');$(this).parent().next().show('slow');return false;">Close</div>-->
+			<div class="cb read_more_box" onclick="$('.print_scr').animate({ height: '17em' }, 1000 );;$(this).parent().next().show('slow');return false;">Close</div>
 		</a>
-		<div class="cb read_more_box" onclick="$('.print_scr').addClass('print_scr_full');$(this).hide();">Read more</div>
+		<!--<div class="cb read_more_box" onclick="$('.print_scr').addClass('print_scr_full');$(this).hide();">Read more</div>-->
+		<div class="cb read_more_box" onclick="$('.print_scr').animate({ height: $('.print_scr').get(0).scrollHeight }, 1000 );$(this).hide();">Read more</div>
 
 	</article>
 
@@ -41,10 +43,10 @@
             <p>Of course, Ogie Alcasid will be there to lead the charge. “It’s good to see that they have evolved as performers, you can see the difference from when they started in the competition. I’m expecting a lot and I’m sure they will deliver,” shares the energetic host.</p>
             <p>Hundreds of auditions, ten episodes, one winner. Who will be the inaugural champion of RisingStars Philippines? Watch the grand finals this Saturday, May 23, 10PM on TV5.</p>
 
-            <div class="cb read_more_box" onclick="$('.read_more_content_g').hide();$(this).parent().next().show();">Close</div>
+            <div class="cb read_more_box" onclick="$('.read_more_content_g').hide();$(this).parent().next().show('slow');">Close</div>
 
 		</div>
-		<div class="cb read_more_box" onclick="$('.read_more_content_g').show();$(this).hide();">Read more</div>
+		<div class="cb read_more_box" onclick="$('.read_more_content_g').show('slow');$(this).hide();">Read more</div>
 	</article>
 
 	<article class="col-xs-12 col-sm-8 col-sm-offset-4 bc_g05">
@@ -97,18 +99,18 @@
                 (www.risingstars.ph), or follow social media updates via Facebook /risingstars.ph or Twitter
                 @RisingStarsasia.</p>
 
-            <div class="cb read_more_box" onclick="$('.read_more_content_g_2').hide();$(this).parent().next().show();">Close</div>
+            <div class="cb read_more_box" onclick="$('.read_more_content_g_2').hide();$(this).parent().next().show('slow');">Close</div>
 
         </div>
 
-        <div class="cb read_more_box" onclick="$('.read_more_content_g_2').show();$(this).hide();">Read more</div>
+        <div class="cb read_more_box" onclick="$('.read_more_content_g_2').show('slow');$(this).hide();">Read more</div>
 
 
 
         <!--<div class="read_more_content_p">-->
 
         <!--</div>-->
-        <!--<div class="cb read_more_box" onclick="$('.read_more_content_p').show();$(this).hide();">Read more</div>-->
+        <!--<div class="cb read_more_box" onclick="$('.read_more_content_p').show('slow');$(this).hide();">Read more</div>-->
     </article>
 
 	<article class="col-xs-12 col-sm-6 col-sm-offset-6 bc_o06">
