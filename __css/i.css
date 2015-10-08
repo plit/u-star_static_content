@@ -122,7 +122,9 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .press_box .read_more_content_g p {font-size: 1em;}
 .press_box .read_more_content_g,
 .press_box .read_more_content_p {display: none}
-
+.press_box .read_more_content_g_2 a {color: #A8A4D3;}
+.press_box .read_more_content_g_2 p {font-size: 1em;}
+.press_box .read_more_content_g_2,
 
 .about_box {color: #ebebec;}
 .about_box a {color: #A8A4D3;}
