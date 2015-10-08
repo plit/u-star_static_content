@@ -95,7 +95,7 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 
 .first_season_box {color: #ebebec;}
 .first_season_box a {color: #A8A4D3;}
-.first_season_box article {padding-left: 0;}
+.first_season_box article {padding-left: 1em;}
 .first_season_box .fs_title {position: relative;height: 3em;margin: 1em 0;}
 .first_season_box .fs_title h1 {font-size: 2em;}
 .first_season_box .y_video_box {text-align: center;padding: 0 0 1em 0;}
@@ -103,6 +103,7 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .first_season_box .y_video_box iframe {width: 100%;height: 240px;}
 .first_season_box .text_space {font-size: .8em;text-align: justify;margin-bottom: 1em;}
 .first_season_box .text_space h2 {font-size: 1.5em;font-weight: bold;}
+.first_season_box .text_space p {margin: 0 0 2em;}
 .first_season_box .text_space .h2_top {margin-top: 0;}
 
 
