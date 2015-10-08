@@ -2,7 +2,7 @@ body {color: #ebebec;}
 
 a, a:hover, a:active, a:focus {outline: 0;}
 
-p {text-align: justify;}
+p {text-align: justify; font-size: 1.3em;}
 
 #bg {background: url('http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/shine.png') no-repeat;
     position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: -1;background-size: 100% auto;}
