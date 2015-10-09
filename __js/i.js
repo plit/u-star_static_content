@@ -1,10 +1,37 @@
+var is_cl = false;
 var time = 5000;
+var intervalId;
 
-function cycleImages() {
-    cycleImagesAction('background_cycler');
-    cycleImagesAction('mob_img_box');
+function startBgRotate() {
+	//return;
+	is_cl && console.log('startBgRotate');
+	$('#background_cycler_I').css('opacity', 0);
+	$('#background_cycler_I').fadeTo( "slow" , 1, function() {
+		// Animation complete.
+		$('#background_cycler_I').fadeIn(1500);
+		intervalId = setInterval(function(){cycleImagesI_()}, time);
+	});
 }
-function cycleImagesAction(id) {
+
+function stopBgRotate() {is_cl && console.log('stopColor', intervalId);
+	clearInterval(intervalId);
+}
+function changeBgRotate(index) {
+	is_cl && console.log('changeBgRotate', index);
+	stopBgRotate();
+	$('#background_cycler_I .active').css('z-index', '1');
+	$('#background_cycler_I .active').removeClass('active');
+	$('#mob_img_box_I .active').removeClass('active');
+	$('#background_cycler_I img:eq(' + index + ')').addClass('active').css('z-index', '2');
+	$('#mob_img_box_I img:eq(' + index + ')').addClass('active');
+	startBgRotate();
+}
+function cycleImagesI_() {
+    cycleImagesI_Action('background_cycler_I');
+    cycleImagesI_Action('mob_img_box_I');
+}
+function cycleImagesI_Action(id) {
+	is_cl && console.log('cycleImagesI_Action', id);
     var $active = $('#' + id + ' .active');
     var $next = ($('#' + id + ' .active').next().length > 0) ? $('#' + id + ' .active').next() : $('#' + id + ' img:first');
     $next.css('z-index', 2);//move the next image up the pile
@@ -15,7 +42,7 @@ function cycleImagesAction(id) {
 }
 
 function loadAndReplaceContent(id, url, callback) {
-    console.log('loadAndReplaceContent', id, url);
+    is_cl && console.log('loadAndReplaceContent', id, url);
     //$( "#" +id ).load( url, function( response, status, xhr ) {
     //    if ( status == "error" ) {
     //        var msg = "Sorry but there was an error: ";
@@ -37,6 +64,8 @@ function loadAndReplaceContent(id, url, callback) {
 
 }
 
+
+
 var loadPage = (function ($) {
     var jQuery = $;
     var my = {},
@@ -55,9 +84,9 @@ var loadPage = (function ($) {
 
     function loadNav(func) {
         loadAndReplaceContent('nav', '__ajax/i/i_nav.html', function() {
-            $("a.kep img.kep").hover(function (i) {//console.log(i + 'hover');
+            $("a.kep img.kep").hover(function (i) {//is_cl && console.log(i + 'hover');
                 $(this).attr("src", $(this).attr("src").replace('normal', 'hover'));
-            }, function (i) {//console.log(i + 'hover e');
+            }, function (i) {//is_cl && console.log(i + 'hover e');
                 $(this).attr("src", $(this).attr("src").replace('hover', 'normal'));
             });
 			func && func();
@@ -66,13 +95,8 @@ var loadPage = (function ($) {
 
     function loadBg() {
         loadAndReplaceContent('background_cycler_box', '__ajax/i/i_bg.html', function(){
-            $('#background_cycler').css('opacity', 0);
-            $('#background_cycler').fadeTo( "slow" , 1, function() {
-                // Animation complete.
-                $('#background_cycler').fadeIn(1500);
-                setInterval('cycleImages()', time);
-            });
 
+			startBgRotate();
 
         });
     }
@@ -185,7 +209,7 @@ function getQueryVariable(variable) {
             return pair[1];
         }
     }
-    //console.log('Query Variable ' + variable + ' not found');
+    //is_cl && console.log('Query Variable ' + variable + ' not found');
 }
 
 
@@ -196,7 +220,7 @@ function getQueryVariable(variable) {
 
 
     var file = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
-    console.log(file);
+    is_cl && console.log(file);
 
     if (file.indexOf('i_about') != -1 || getQueryVariable('go') == 'about') {
         loadPage.about();
