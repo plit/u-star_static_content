@@ -192,11 +192,20 @@ var loadPage = (function ($) {
 	};
 
 	my.app2 = function() {
-		loadPage.body_bg('#ECEFDC url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app2.jpg")' +
+		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app2.jpg")' +
 		' no-repeat  fixed center 3.5em ');
 		loadNav();
 		//loadBg();
 		loadContent('__ajax/i/i_content_app2.html');
+		loadFooter();
+	};
+
+	my.app3 = function() {
+		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app2.jpg")' +
+		' no-repeat  fixed center 3.5em ');
+		loadNav();
+		//loadBg();
+		loadContent('__ajax/i/i_content_app3.html');
 		loadFooter();
 	};
 
@@ -260,6 +269,9 @@ function getQueryVariable(variable) {
     }
 	else if (file.indexOf('app2') != -1 || getQueryVariable('go') == 'app2') {
         loadPage.app2();
+    }
+	else if (file.indexOf('app3') != -1 || getQueryVariable('go') == 'app3') {
+        loadPage.app3();
     }
 	else if (file.indexOf('app') != -1 || getQueryVariable('go') == 'app') {
         loadPage.app();
