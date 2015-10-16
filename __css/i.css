@@ -184,6 +184,14 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 
 
 
+
+
+
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 1250px) {
     #background_cycler_I img {width: 100%;}
 }
@@ -196,4 +204,5 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
     #navbar .menu_list li {width: 100%;text-align: left;}
     #mob_img_box_I {margin: 0 auto;}
     .youtube_box_center iframe {width: 90%;}
+	#mob_img_box_I img {width: 150px;}
 }
