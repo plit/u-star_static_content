@@ -155,11 +155,11 @@ function dump(arr, level) {
 
 	// The padding given at the beginning of the line.
 	var level_padding = "";
-	for ( var j = 0; j < level + 1; j++)
+	for (var j = 0; j < level + 1; j++)
 		level_padding += "    ";
 
 	if (typeof (arr) == 'object') { // Array/Hashes/Objects
-		for ( var item in arr) {
+		for (var item in arr) {
 			var value = arr[item];
 
 			if (typeof (value) == 'object') { // If it is an array,
@@ -220,7 +220,6 @@ function sleep(milliseconds) {
 		}
 	}
 }
-
 
 
 var aler_show_mess = '';
@@ -291,20 +290,20 @@ function AlertShowX(message, linesHeight) {
 	cln('AlertShowX');
 	var winHeight = document.documentElement.clientHeight;
 	var winWidth = document.documentElement.clientWidth;
-	var szorzoW = 768 < winWidth ? 1 : Math.floor((winWidth / 768)*100) / 100;
+	var szorzoW = 768 < winWidth ? 1 : Math.floor((winWidth / 768) * 100) / 100;
 	var linesHeight = linesHeight;// num * 22;
 	var wH2 = Math.round(winHeight / 2);
 	var lH2 = Math.round(linesHeight / 2);
 	var topPX = Math.round(wH2 - lH2);// console.log(wH2+' - ' +lH2);
 	AlertShow('<div class="cp" onclick="AlertHiden();" style="position: absolute;right: 9px;top: 5px;">X</div>'
 	+ message);
-	console.log(topPX, szorzoW, winWidth, linesHeight);
+	//console.log(topPX, szorzoW, winWidth, linesHeight);
 	$('#alertId').css('top', topPX + 'px');
 	$('#alertId').css('marginLeft', '-' + 300 * szorzoW + 'px');
 	$('#alertId').css('width', 600 * szorzoW + 'px');
 	$('#alertId').css('height', linesHeight + 'px');
 	$('#alertId').css('padding', '5px');
 	$('#alert_form_id').hide();
-	$('#alertId').select(".text").each(function(elmt) { /* elmt.css('padding','0'); */
+	$('#alertId').select(".text").each(function (elmt) { /* elmt.css('padding','0'); */
 	});
 }
