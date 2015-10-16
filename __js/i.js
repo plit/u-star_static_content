@@ -166,7 +166,7 @@ var loadPage = (function ($) {
     };
 
     my.press = function() {
-		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_press_2.jpg")' +
+		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_press.jpg")' +
 			' no-repeat fixed center top / cover');
 			//' no-repeat  top center fixed');
         loadNav();
