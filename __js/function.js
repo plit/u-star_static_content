@@ -220,3 +220,91 @@ function sleep(milliseconds) {
 		}
 	}
 }
+
+
+
+var aler_show_mess = '';
+function createDiv(parentId, idN, classN, innerH) {
+	var divTag = document.createElement("div");
+	if (idN)
+		divTag.setAttribute('id', idN);
+	if (classN)
+		divTag.setAttribute('class', classN);
+	if (innerH)
+		divTag.innerHTML = innerH;
+	document.getElementById(parentId).appendChild(divTag);
+}
+
+function AlertHiden() {
+	cln('AlertHiden');
+	var fs = document.getElementById('fullscreen');
+	fs.style.display = 'none';
+	fs.innerHTML = '';
+}
+
+function AlertShow(message) {
+	cln('AlertShow');
+	// $('#fullscreen').html('');
+	var variable = document.getElementById('fullscreen');
+	if (typeof (variable) == "undefined" || variable == null)
+		$("body").append('<div id="fullscreen" style="display: none;"></div>');
+
+	createDiv('fullscreen', 'alertId', 'alert br05', '');
+	createDiv('alertId', '', 'text', message);
+	createDiv(
+		'alertId',
+		'',
+		'',
+		'<form id="alert_form_id" style="text-align:right"><input type="button" value="OK" style="width:75px;" onclick="AlertHiden();"></form>');
+	document.getElementById('fullscreen').style.display = '';
+	// figyelese hogy melle katintasra eltunjon
+	$('#fullscreen').bind('click', AlertShowToClick);
+}
+
+function AlertShowMod(message, subclass) {
+	if (!subclass) {
+		var subclass = '';
+	}
+	cln('AlertShowMod');
+	var variable = document.getElementById('fullscreen');
+	if (typeof (variable) == "undefined" || variable == null)
+		$("body").append('<div id="fullscreen" style="display: none;"></div>');
+
+	createDiv('fullscreen', 'alertId', 'modalwindow br05 ' + subclass, '');
+	createDiv('alertId', '', 'text', message);
+	document.getElementById('fullscreen').style.display = '';
+	// figyelese hogy melle katintasra eltunjon
+	$('#fullscreen').bind('click', AlertShowToClick);
+}
+
+// figyelese hogy melle katintasra eltunjon
+function AlertShowToClick(event) {
+	var element = event.target;
+	// alert("Tag Name : " + element.tagName );
+	// alert("Tag Name : " + element.id );alert(event);
+	if (element.tagName == 'DIV' && element.id == 'fullscreen')
+		AlertHiden();
+}
+// a felugro ablakot x-el is be lehet bezasrni
+// linesHeight - a doboz magossaga
+function AlertShowX(message, linesHeight) {
+	cln('AlertShowX');
+	var winHeight = document.documentElement.clientHeight;
+	var winWidth = document.documentElement.clientWidth;
+	var szorzoW = 768 < winWidth ? 1 : Math.floor((winWidth / 768)*100) / 100;
+	var linesHeight = linesHeight;// num * 22;
+	var wH2 = Math.round(winHeight / 2);
+	var lH2 = Math.round(linesHeight / 2);
+	var topPX = Math.round(wH2 - lH2);// console.log(wH2+' - ' +lH2);
+	AlertShow('<div class="cp" onclick="AlertHiden();" style="position: absolute;right: 9px;top: 5px;">X</div>'
+	+ message);
+	console.log(topPX, szorzoW, winWidth, linesHeight);
+	$('#alertId').css('top', topPX + 'px');
+	$('#alertId').css('marginLeft', '-' + 300 * szorzoW + 'px');
+	$('#alertId').css('width', 600 * szorzoW + 'px');
+	$('#alertId').css('height', linesHeight + 'px');
+	$('#alertId').css('padding', '5px');
+	$('#alert_form_id').hide();
+	$('#alertId').select(".text").each(function(elmt) { /* elmt.css('padding','0'); */
+	});
+}
