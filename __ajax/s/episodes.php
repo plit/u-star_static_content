@@ -1481,7 +1481,7 @@
 			{
 				cln('rsCompetition - tv5 - playPerformance');
 				console.log(comp_id, karaoke_song_id, user_id, entry_id, allowVote);
-				tge('Competition', 'Play Performance', 'comp_id:' + comp_id, 1);
+				//tge('Competition', 'Play Performance', 'comp_id:' + comp_id, 1);
 				var url_d = document.URL.split('?');
 				var url = document.URL.replace(/<?='tv5_episode';?>(.*)(\?)?/gi,'<?='tv5_episode';?>/'+landing_page+'/play/' + karaoke_song_id + '/?' + (url_d[1] || '') );
 
