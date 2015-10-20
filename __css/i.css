@@ -34,7 +34,7 @@ p {text-align: justify; font-size: 1.3em;}
 .navbar-default a.kep {margin: 0;padding: 1em 0.6em;float: left;}
 .navbar-default img.kep {height: 1.4em;}
 #navbar .menu_list {width: 75% ; font-size: 1.1em;}
-#navbar .menu_list li {padding: 0 0.3em;}
+#navbar .menu_list li {padding: 0 0.9em;}
 #navbar li {padding: 0 0;text-align: center;}
 #navbar li a {color: #ebebec;font-weight: bold}
 #navbar .active a {background-color: transparent;}
@@ -87,6 +87,8 @@ span {font-size: 1.2em;}
 footer {position: relative;bottom: 0;line-height: 3em;}
 footer a {color: #ebebec;font-weight: bold;}
 footer a:hover {color: #42C0FF;text-decoration: none;}
+
+footer .hidebox {display: inline-block; width: 80px; height: 25px; position: relative;}
 
 
 .contact_form {}
