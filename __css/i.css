@@ -88,7 +88,7 @@ footer {position: relative;bottom: 0;line-height: 3em;}
 footer a {color: #ebebec;font-weight: bold;}
 footer a:hover {color: #42C0FF;text-decoration: none;}
 
-footer .hidebox {display: inline-block; width: 80px; height: 25px; position: relative;}
+footer .hidebox {display: inline-block; width: 70px; height: 25px; position: relative;}
 
 
 .contact_form {}
