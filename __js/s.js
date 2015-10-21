@@ -37,6 +37,76 @@ function loadAndReplaceContent(id, url, callback) {
 
 }
 
+var youtube = function ($) {
+	var jQuery = $;
+	var my = {},
+		is_mobile = window.innerWidth < 768;
+
+	function privateMethod() {
+		// ...
+	}
+
+	my.init = function () {
+		cln('youtube.init');
+		var simple = 'YouTube-icon-dark_o5';
+		var hover = 'YouTube-icon-full_color_o7';
+		$('.y_img_box').hover(
+			function () {
+				$('.y_img_box .play').attr('src', $('.y_img_box .play').attr('src').replace(simple, hover));
+			},
+			function () {
+				$('.y_img_box .play').attr('src', $('.y_img_box .play').attr('src').replace(hover, simple));
+			}
+		);
+
+		$('.y_img_box').click(function (event) {
+			cl('.y_img_box click');
+			youtube.alertVideo($(this).find('.youtube_video_img'))
+		})
+	};
+
+	my.alertVideo = function (c_this) {
+		cln('youtube.alertVideo');
+		// http://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api
+		// src = http://img.youtube.com/vi/pDxWewLpGVk/0.jpg| hqdefault | hqdefault
+		var youtube_key = $(c_this).attr('src').match(/\/vi\/(.*?)\//)[1];
+		youtube_key = youtube_key || 'pDxWewLpGVk';
+
+		var winHeighth = document.documentElement.clientHeight;
+		var winWidth = document.documentElement.clientWidth;
+		var alertWidth = winWidth > 768 && winWidth < 1000 ? 768 : (winWidth > 1000 ? 900 : winWidth * 0.8);
+		//alert(alertWidth);
+		var arany = 0.58;
+
+		AlertShowX(
+			'<div class="y_video_box">' +
+			'	<img class="loader1" src="http://media.apnarm.net.au/128.6/tc/base/img/miscSize/ajaxSpinner.gif" alt="loading gif"/>' +
+			'	<iframe style="width: 100%; height: 313px;" src="https://www.youtube.com/embed/' + youtube_key + '?autoplay=1" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
+			alertWidth * arany
+		);
+		//$('#fullscreen').css('top', '-'+ winHeighth * 1.5 +'px');
+		$('#fullscreen div.alert div.text').css('padding-bottom', 0);
+		$('#alertId').css('padding', '20px');
+		if (winWidth > 768) {
+			$('#alertId').css('width', alertWidth + 'px');
+			$('#alertId').css('left', '50%');
+			$('#alertId').css('margin-left', '-' + Math.round(alertWidth / 2) + 'px');
+		}
+
+		$('.y_video_box iframe').css('height', $('#alertId').css('height').split('p')[0] - 40 + 'px');
+
+		$('.y_video_box iframe').on('load', function () {
+			$('.loader1').hide();
+		});
+	};
+
+
+	return my;
+
+}(jQuery);
+
+
 var loadPage = (function ($) {
 	var jQuery = $;
 	var my = {},
