@@ -162,6 +162,8 @@ var loadPage = (function ($) {
 
 
 	my.home = function () {
+		//$('body').css('background', 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/' +
+		//	'img/backgrounds/bg_s_home2.jpg") no-repeat fixed center center / cover ');
 		loadNav(function () {
 			//$('.navbar').addClass('navbar-fixed-top')
 		});
@@ -240,6 +242,14 @@ var sites_settings = {
 		"file_type": 'html',
 		"body_css_bg_img": 'silver url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
 			'img/backgrounds/shine.png") no-repeat  center center fixed'
+	},
+	"home2": {
+		"file_type": 'html',
+		"body_css_bg_img": 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/' +
+		'img/backgrounds/bg_s_home2.jpg") no-repeat fixed center center / cover'
+	},
+	"home": {
+		"file_type": 'html'
 	}
 };
 $(document).ready(function () {
@@ -257,6 +267,11 @@ $(document).ready(function () {
 		loadPage.contact();
 	}
 	else {
+
+		if (!getQueryVariable('go')) {
+			var file_name = 'home2';
+			loadPage.universalLoadContent(file_name, sites_settings[file_name]);
+		}
 
 		if (getQueryVariable('go') && sites_settings[getQueryVariable('go')]) {
 			var file_name = getQueryVariable('go');

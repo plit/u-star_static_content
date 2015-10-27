@@ -11,6 +11,8 @@ button, button:hover, button:active, button:focus {outline: 0;}
 .bc_g06 {background-color: rgba(34, 88, 103, 0.6);}
 .bc_o06 {background-color: rgba(210, 132, 102, 0.6);}
 .bc_r06 {background-color: rgba(145, 42, 66, 0.6);}
+.bc_w06 {background-color: rgba(255, 255, 255, 0.6);}
+.bc_w08 {background-color: rgba(255, 255, 255, 0.8);}
 
 .lp_tv5,
 .container,
