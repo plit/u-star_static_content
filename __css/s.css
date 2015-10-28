@@ -13,6 +13,7 @@ button, button:hover, button:active, button:focus {outline: 0;}
 .bc_r06 {background-color: rgba(145, 42, 66, 0.6);}
 .bc_w06 {background-color: rgba(255, 255, 255, 0.6);}
 .bc_w08 {background-color: rgba(255, 255, 255, 0.8);}
+.bc_w09 {background-color: rgba(255, 255, 255, 0.9);}
 
 .lp_tv5,
 .container,

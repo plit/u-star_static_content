@@ -69,7 +69,14 @@ var youtube = function ($) {
 		cln('youtube.alertVideo');
 		// http://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api
 		// src = http://img.youtube.com/vi/pDxWewLpGVk/0.jpg| hqdefault | hqdefault
-		var youtube_key = $(c_this).attr('src').match(/\/vi\/(.*?)\//)[1];
+		var youtube_keys = $(c_this).attr('src').match(/\/vi\/(.*?)\//);
+		var youtube_key = '';
+		if (youtube_keys) {
+			youtube_key = youtube_keys[1];
+		}
+		if ($(c_this).attr('y-key')) {
+			youtube_key = $(c_this).attr('y-key')
+		}
 		youtube_key = youtube_key || 'pDxWewLpGVk';
 
 		var winHeighth = document.documentElement.clientHeight;
@@ -135,6 +142,7 @@ var loadPage = (function ($) {
 	}
 
 	function loadBg() {
+		cln('loadBg');
 		loadAndReplaceContent('background_cycler_box', '__ajax/i/i_bg.html', function () {
 			$('#background_cycler').css('opacity', 0);
 			$('#background_cycler').fadeTo("slow", 1, function () {
@@ -233,6 +241,9 @@ var sites_settings = {
 	"app": {
 		"file_type": 'html'
 	},
+	"app2": {
+		"file_type": 'html'
+	},
 	"first_season": {
 		"file_type": 'html',
 		"body_css_bg_img": 'silver url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/'+
@@ -244,9 +255,9 @@ var sites_settings = {
 			'img/backgrounds/shine.png") no-repeat  center center fixed'
 	},
 	"home2": {
-		"file_type": 'html',
-		"body_css_bg_img": 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/' +
-		'img/backgrounds/bg_s_home2.jpg") no-repeat fixed center center / cover'
+		"file_type": 'html'
+		//"body_css_bg_img": 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/' +
+		//'img/backgrounds/bg_s_home2.jpg") no-repeat fixed center center / cover'
 	},
 	"home": {
 		"file_type": 'html'
