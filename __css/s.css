@@ -57,7 +57,7 @@ footer a:hover {color: #42C0FF;text-decoration: none;}
 .home_box .y_videos .video_text  span {display: inline-block;vertical-align: middle;line-height: 1.8em; font-size: 1.2em; text-align: justify;}
 .home_box .news {clear: both;}
 .home_box .news > div {padding: 1em;}
-.home_box .news > div > div {border: silver solid 1px;padding: 0 1em; text-align: justify;min-height: 29em;}
+.home_box .news > div > div {border: silver solid 1px;padding: 0 1em; text-align: justify;min-height: 27em;}
 .home_box .news .read_more {display: block;text-align: right;}
 .home_box .news img {width: 100%; }
 .home_box .news span {padding-top: 1em; display: block; clear: both; }
