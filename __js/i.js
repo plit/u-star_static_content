@@ -200,8 +200,8 @@ var loadPage = (function ($) {
 	};
 
 	my.about = function () {
-		loadPage.body_bg('#1F5D68 url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_about.jpg")' +
-		' no-repeat fixed center 3.5em / cover');
+		loadPage.body_bg('#1F5D68 url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_about_2.jpg")' +
+		' no-repeat fixed center top / cover');
 		loadNav();
 		//loadBg();
 		loadContent('__ajax/i/i_content_about2.html');
