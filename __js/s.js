@@ -261,6 +261,9 @@ var sites_settings = {
 	},
 	"home": {
 		"file_type": 'html'
+	},
+	"singforload_rules": {
+		"file_type": 'html'
 	}
 };
 $(document).ready(function () {
