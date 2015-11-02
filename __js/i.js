@@ -271,7 +271,7 @@ var loadPage = (function ($) {
 	};
 
 	my.app3 = function () {
-		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app4.jpg")' +
+		loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app5.jpg")' +
 		' no-repeat  fixed center 3.5em ');
 		loadNav();
 		//loadBg();
