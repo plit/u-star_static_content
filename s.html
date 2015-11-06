@@ -40,30 +40,61 @@
 	<script type="text/javascript" src="__js/s_rsbanners.js"></script>
 	<!--<script type="text/javascript" src="http://www.risingstars.asia/ph/rdr/js/load.php?f=rsbanners"></script>-->
 
-    <script>
-        googletag.cmd.push(function () {
-            // new
-            //Adslot 1 declaration
-            googletag.defineSlot('/4711/RisingStars', [[728,90]],'div-gpt-ad-606892918828401063-1')
-                    .setTargeting('pos',['top'])
-                    .addService(googletag.pubads());
+	<script type="text/javascript">
+		if(window.location.hostname.indexOf('inquirer.net') != -1) {
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			(function () {
+				var gads = document.createElement("script");
+				gads.async = true;
+				gads.type = "text/javascript";
+				var useSSL = "https:" == document.location.protocol;
+				gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+				var node = document.getElementsByTagName("script")[0];
+				node.parentNode.insertBefore(gads, node);
+			})();
+		}
+	</script>
+	<script>
+		if(window.location.hostname.indexOf('inquirer.net') != -1) {
+			googletag.cmd.push(function () {
+				//Adslot 1 declaration
+				//	googletag.defineSlot('/4711/RisingStars', [[728,90]],'div-gpt-ad-454988732548428081-1')
+				//			.setTargeting('pos',['top'])
+				//			.addService(googletag.pubads());
 
-            //Adslot 2 declaration
-            googletag.defineSlot('/4711/RisingStars', [[300,250]],'div-gpt-ad-606892918828401063-2')
-                    .setTargeting('pos',['middle'])
-                    .addService(googletag.pubads());
+				//Adslot 2 declaration
+				//	googletag.defineSlot('/4711/RisingStars', [[120,600],[160,600],[300,600]],'div-gpt-ad-454988732548428081-2')
+				//			.setTargeting('pos',['right'])
+				//			.addService(googletag.pubads());
+				//Adslot 3 declaration
+				//	googletag.defineOutOfPageSlot('/4711/RisingStars', 'div-gpt-ad-454988732548428081-oop')
+				//			.setTargeting('pos',['oop'])
+				//			.addService(googletag.pubads());
 
-            //Adslot 3 declaration
-            googletag.defineSlot('/4711/RisingStars', [[160,600],[300,600]],'div-gpt-ad-606892918828401063-3')
-                    .setTargeting('pos',['right'])
-                    .addService(googletag.pubads());
+				// new
+				//Adslot 1 declaration
+				googletag.defineSlot('/4711/RisingStars', [[728, 90]], 'div-gpt-ad-606892918828401063-1')
+						.setTargeting('pos', ['top'])
+						.addService(googletag.pubads());
 
-            googletag.pubads().enableSingleRequest();
-            googletag.pubads().setTargeting('pos',['top']).setTargeting('pos',['middle']).setTargeting('pos',['right']);
-            googletag.pubads().enableAsyncRendering();
-            googletag.enableServices();
-        });
-    </script>
+				//Adslot 2 declaration
+				googletag.defineSlot('/4711/RisingStars', [[300, 250]], 'div-gpt-ad-606892918828401063-2')
+						.setTargeting('pos', ['middle'])
+						.addService(googletag.pubads());
+
+				//Adslot 3 declaration
+				googletag.defineSlot('/4711/RisingStars', [[160, 600], [300, 600]], 'div-gpt-ad-606892918828401063-3')
+						.setTargeting('pos', ['right'])
+						.addService(googletag.pubads());
+
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().setTargeting('pos', ['top']).setTargeting('pos', ['middle']).setTargeting('pos', ['right']);
+				googletag.pubads().enableAsyncRendering();
+				googletag.enableServices();
+			});
+		}
+	</script>
 
 </head>
 
