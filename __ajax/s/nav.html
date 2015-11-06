@@ -1,6 +1,41 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top0 ">
 	<div class="container site_width">
+		<style>
+			<!--
+			#header_top_inq {position: relative;margin: 0 auto;width: 975px;padding: 8px 0 0 5px;}
+			#header_top_inq #inq_logo {float: left;}
+			#header_top_inq #inq_logo img {height: 25px;margin: 0px 0px 0 0;}
+			#header_top_inq #top_menu {float: none;}
+			#header_top_inq #top_menu a {display: block;float: left;text-decoration: none;color: #CBCCC7;padding: 0 4px;text-transform: uppercase;
+				font-size: 14px;font-weight: bold;font-family: Arial,​Helvetica,​sans-serif;}
+			#header_top_inq #top_menu ul {list-style: none;margin-bottom: 0;}
+			#header_top_inq #top_menu li {border-radius: 5px 5px 5px 0;padding: 3px 9px;color: gray;position: relative;}
+			#header_top_inq #top_menu li:hover {background-color: #fff;}
+			#header_top_inq #top_menu li:hover i {position: absolute;bottom: 0;left: -9px;background: url("/rdr/img/inq/sarok.png") no-repeat;width: 9px;height: 9px;}
+
+			#header_top_inq #top_menu a:hover {color: #D2E102;}
+			-->
+		</style>
+		<div id="header_top_inq" style="display: none;">
+			<div id="inq_logo">
+				<a href="http://www.inquirer.net/">
+					<img src="http://www.inquirer.net/inq2014/resources/logo-news.png"></a>
+			</div>
+
+			<div id="top_menu">
+				<ul>
+					<a href="http://newsinfo.inquirer.net"><li class="menu_news">news<i></i></li></a>
+					<a href="http://sports.inquirer.net"><li class="menu_sports">sports<i></i></li></a>
+					<a href="http://lifestyle.inquirer.net"><li class="menu_lifestyle">lifestyle<i></i></li></a>
+					<a href="http://entertainment.inquirer.net"><li class="menu_entertainment">entertainment<i></i></li></a>
+					<a href="http://business.inquirer.net"><li class="menu_business">business<i></i></li></a>
+					<a href="http://technology.inquirer.net"><li class="menu_technology">technology<i></i></li></a>
+					<a href="http://opinion.inquirer.net"><li class="menu_opinion">opinion<i></i></li></a>
+					<a href="http://globalnation.inquirer.net"><li class="menu_global">global nation<i></i></li></a>
+				</ul>
+			</div>
+		</div>
         <!-- felső banner-->
 		<div style="clear: both;text-align: center;" class="hidden-xs">
 			<div id="showBannerPosition_11"><img class="dn" src="http://www.risingstars.asia/ph/rdr/images/banner-sitelevel.png"></div>
@@ -56,3 +91,9 @@
 		<!--/.nav-collapse -->
 	</div>
 </nav>
+
+<script>
+	if(window.location.hostname.indexOf('inquirer.net') != -1) {
+		$('#header_top_inq').show();
+	}
+</script>
