@@ -259,6 +259,11 @@ var sites_settings = {
 		//"body_css_bg_img": 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/' +
 		//'img/backgrounds/bg_s_home2.jpg") no-repeat fixed center center / cover'
 	},
+    "home3": {
+		"file_type": 'html'
+		//"body_css_bg_img": 'rgba(0, 0, 0, 0) url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/' +
+		//'img/backgrounds/bg_s_home2.jpg") no-repeat fixed center center / cover'
+	},
 	"home": {
 		"file_type": 'html'
 	},
