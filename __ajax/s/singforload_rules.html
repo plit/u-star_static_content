@@ -193,14 +193,14 @@ background-repeat: no-repeat; width:372px; height:204px; position: relative; bac
 background-repeat: no-repeat; width:372px; height:204px; position: relative; background-size: 372px 204px; border-radius: 8px 8px 8px 8px;">
             <div style="background-color:rgba(255,255,255,0.8);width:372px; height:204px;border-radius: 8px 8px 8px 8px;">
                 <style>
-                    #comp_info_table_box th {padding: 0 0.5em; text-align: center; border: 1px solid black;}
-                    #comp_info_table_box td {padding: 0 0.5em; border: 1px solid black;}
-                    #comp_info_table_box table {font-size: 0.8em; border: 1px solid black; margin: 0 auto;}
+                    #comp_info_table_box2 th {padding: 0 0.5em; text-align: center; border: 1px solid black;}
+                    #comp_info_table_box2 td {padding: 0 0.5em; border: 1px solid black;}
+                    #comp_info_table_box2 table {font-size: 0.8em; border: 1px solid black; margin: 0 auto;}
                     .tittle {text-align: center;}
                     .footer {font-size: 0.7em; line-height: 1.5em; text-align: justify; position: absolute; bottom: 3px;font-weight: bold; padding: 0 5px;}
                 </style>
                 <div class="tittle">Point summary of the top 5 performances</div>
-                <div id="comp_info_table_box"></div>
+                <div id="comp_info_table_box2"></div>
                 <script>
 
                     jQuery.ajax({
@@ -212,7 +212,7 @@ background-repeat: no-repeat; width:372px; height:204px; position: relative; bac
                             //rsLoadSpinner.show();
                         },
                         success : function(response) {
-                            $('#comp_info_table_box').html(response);
+                            $('#comp_info_table_box2').html(response);
                             $("td a").html('View');
                         },
                         error : function(jqXHR, textStatus, errorThrown) {
