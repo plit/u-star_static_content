@@ -150,7 +150,7 @@ footer .hidebox {display: inline-block; width: 70px; height: 25px; position: rel
 .about_box .text_space .h2_top {margin-top: 0;}
 
 .application h1{font-size: 28px; margin-top: 5px; margin-bottom: 5px;}
-
+.application img{display:block; margin: 0 auto;}
 
 
 /*	alert box	->	*/
