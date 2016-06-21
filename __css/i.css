@@ -59,8 +59,9 @@ p {text-align: justify; font-size: 1.3em;}
 section.bc_b06 {margin-top: 17%;}
 section.bc_b06 .row {padding: 0;}
 .content_text_box {font-weight: bold;}
-.content_text_box video{width: 100%; padding: 8.3em 0 1em 0;}
+.content_text_box video{width: 100%; padding: 1.3em 0 1em 0;}
 .content_text_box span {font-size: 1em;}
+.content_text_box h1 {font-size: 3em;padding: 0 0 0.3em 0.3em;}
 .content_text_box2 span {font-size: 1.2em;}
 
 .contact_text_a a:active,
@@ -79,7 +80,7 @@ span {font-size: 1.2em;}
 	margin: .2em;float: left;cursor: pointer;}
 
 .home_black_box {padding: 1em 1em; text-align: justify;}
-.home_black_box h1 {font-size: 1.9em;padding-bottom: 0.3em;}
+
 
 .social_img {padding-right: 0.2em;}
 
