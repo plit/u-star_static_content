@@ -278,6 +278,14 @@ var loadPage = (function ($) {
 		loadContent('__ajax/i/i_content_app3.html');
 		loadFooter();
 	};
+    my.fb = function () {
+        loadPage.body_bg('#fff url("http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app5.jpg")' +
+        '  no-repeat fixed center top / cover');
+        loadNav();
+        //loadBg();
+        loadContent('__ajax/i/i_content_fb.html');
+        loadFooter();
+    };
 
 	my.body_bg = function (value) {
 		$('body').css('background', value);
@@ -338,6 +346,9 @@ else if (file.indexOf('app2') != -1 || getQueryVariable('go') == 'app2') {
 }
 else if (file.indexOf('app3') != -1 || getQueryVariable('go') == 'app3') {
 	loadPage.app3();
+}
+else if (file.indexOf('fb') != -1 || getQueryVariable('go') == 'fb') {
+	loadPage.fb();
 }
 else if (file.indexOf('app') != -1 || getQueryVariable('go') == 'app') {
 	loadPage.app();
