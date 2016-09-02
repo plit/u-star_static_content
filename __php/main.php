@@ -64,6 +64,7 @@ class Web_API extends Base
 		$play_url = Url::getPlayUrl($song);
 		$img_url = Url::getVideoImgUrl($song);
 		$meta_data = array(
+			'og:app_id' => '1732472110298660',
 			'og:url' => $play_url,
 			'og:type' => 'website',
 			'og:title' => 'title',
