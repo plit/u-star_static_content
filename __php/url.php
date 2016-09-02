@@ -17,7 +17,10 @@ class Url
 	}
 
 	public static function getVideoImgUrl($song) {
-		return self::$cdn_video_url . 'ustar/' . $song['user_id'] . '/' . $song['s_file_name'] . '.jpg';
+		if (!empty($song['user_id'])) {
+			return self::$cdn_video_url . 'ustar/' . $song['user_id'] . '/' . $song['s_file_name'] . '.jpg';
+		}
+		return 'http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/shine.png';
 	}
 
 	public static function getPlayUrl($song) {
