@@ -6,24 +6,65 @@
     <article class="col-xs-12 col-sm-6 ">
         <div style="width: 22em;" class="bc_brown05 fs_title">
             <div class="bc_brown05"></div>
-            <h1>U-STAR Application</h1>
+            <h1>U-STAR Application0</h1>
         </div>
     </article>
     <article class="col-xs-12 col-sm-6" style="padding-right:0px;">
+        <button class="js-share-facebook">share</button>
        <div style="max-width: 420px;min-height: 700px" id="demo_app_box">
        </div>
     </article>
 </section>
 
 <script>
+
+
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1732472110298660',
+            xfbml      : true,
+            version    : 'v2.7'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    $('.js-share-facebook').on('click', function() {
+        var BASE_URL = 'http://u-star.tv/?go=demo&eid=11';
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.shares',
+            action_properties: JSON.stringify({
+                object : {
+                    'og:url': BASE_URL,
+                    'og:title': 'U-sTar',
+                    'og:description': 'ustar description',
+                    'og:og:image:width': '254',
+                    'og:image:height': '90',
+                    'og:image': 'http://be47b4b2b5f5e9da2da4-d3df4c08c94860389f24a50eee704af8.r44.cf1.rackcdn.com/international/img/u-star-logo_254x90_none_text.png'
+                }
+            })
+        });
+    });
+
+
     /* $('#demo_ustar_app_box').load( "http://app.u-star.tv/api/", function() {
      alert( "Load was performed." );
      });/* */
-    var sid = get_param('sid');
+    var eid = get_param('eid');
     var demo_html = '<iframe src="http://app.u-star.tv/api/" width="100%" height="700"></iframe>';
-    if (sid !== null) {
-        $('#demo_app_box').html(demo_html.replace('/api/', '/api/#/app/play/' + sid));
+    if (eid !== null) {
+        $('#demo_app_box').html(demo_html.replace('/api/', '/api/#/app/play/' + eid));
     } else {
         $('#demo_app_box').html(demo_html);
     }
+    //$('meta[property="og:image"]').attr('content', 'http://73adc0e8ebac205046b3-f166d868b29010bc304fe7760b66a9b0.r88.cf1.rackcdn.com/img/backgrounds/bg_mob_app5.jpg');
+
+
 </script>
