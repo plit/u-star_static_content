@@ -61,9 +61,10 @@ class Web_API extends Base
 	public function replaceFacebookMeta($source)
 	{
 		$song = $this->getSong();
+		$play_url = Url::getPlayUrl($song);
 		$img_url = Url::getVideoImgUrl($song);
 		$meta_data = array(
-			'og:url' => _SITE_URL,
+			'og:url' => $play_url,
 			'og:type' => 'website',
 			'og:title' => 'title',
 			'og:description' => 'description',

@@ -42,3 +42,5 @@ if (empty($_GET["kohana_uri"]) || $_GET["kohana_uri"] == '/i' || $_GET["kohana_u
 		echo 'U-Star';
 	}
 }
+
+//print_r($_SERVER);

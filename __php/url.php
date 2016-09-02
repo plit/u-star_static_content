@@ -20,6 +20,16 @@ class Url
 		return self::$cdn_video_url . 'ustar/' . $song['user_id'] . '/' . $song['s_file_name'] . '.jpg';
 	}
 
+	public static function getPlayUrl($song) {
+		if (!empty($song['entry_id'])) {
+			return _SITE_URL . 'play/' . $song['entry_id'];
+		}
+		return _SITE_URL . 'play';
+	}
+
+
+
+
 	
 	public static function getProfileUrl() {
 		return self::$site_url . 'profile/';
