@@ -10,14 +10,20 @@
         </div>
     </article>
     <article class="col-xs-12 col-sm-6" style="padding-right:0px;">
-       <div style="max-width: 420px;min-height: 700px" id="demo_ustar_app_box">
-            <iframe src="http://app.u-star.tv/api/#/app/play/5" width="100%" height="700"></iframe>
+       <div style="max-width: 420px;min-height: 700px" id="demo_app_box">
        </div>
     </article>
 </section>
 
 <script>
-   /* $('#demo_ustar_app_box').load( "http://app.u-star.tv/api/", function() {
-        alert( "Load was performed." );
-    });/* */
+    /* $('#demo_ustar_app_box').load( "http://app.u-star.tv/api/", function() {
+     alert( "Load was performed." );
+     });/* */
+    var sid = get_param('sid');
+    var demo_html = '<iframe src="http://app.u-star.tv/api/" width="100%" height="700"></iframe>';
+    if (sid !== null) {
+        $('#demo_app_box').html(demo_html.replace('/api/', '/api/#/app/play/' + sid));
+    } else {
+        $('#demo_app_box').html(demo_html);
+    }
 </script>
