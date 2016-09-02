@@ -80,8 +80,8 @@ class Web_API extends Base
 		$str = str_replace('<!-- FB meta -->', $replace, $source);
 
 		if (!empty($this->_eid) && empty($_GET['eid'])) {
-			$replace = "<script>window.location = '?go=demo&eid=11';</script>";
-			$str = str_replace('<!-- redirect -->', $replace, $str);
+			//$replace = "<script>window.location = '?go=demo&eid=11';</script>";
+			//$str = str_replace('<!-- redirect -->', $replace, $str);
 		}
 
 		return $str;

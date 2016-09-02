@@ -154,7 +154,7 @@ var loadPage = (function ($) {
 	};
 
 	function loadNav(func) {
-		loadAndReplaceContent('nav', '__ajax/i/i_nav.html', function () {
+		loadAndReplaceContent('nav', '/__ajax/i/i_nav.html', function () {
 			$("a.kep img.kep").hover(function (i) {//is_cl && console.log(i + 'hover');
 				$(this).attr("src", $(this).attr("src").replace('normal', 'hover'));
 			}, function (i) {//is_cl && console.log(i + 'hover e');
@@ -165,7 +165,7 @@ var loadPage = (function ($) {
 	}
 
 	function loadBg() {
-		loadAndReplaceContent('background_cycler_box', '__ajax/i/i_bg.html', function () {
+		loadAndReplaceContent('background_cycler_box', '/__ajax/i/i_bg.html', function () {
 
 			startBgRotate();
 
@@ -173,14 +173,14 @@ var loadPage = (function ($) {
 	}
 
 	function loadFooter(func) {
-		loadAndReplaceContent('footer', '__ajax/i/i_footer.html', function () {
+		loadAndReplaceContent('footer', '/__ajax/i/i_footer.html', function () {
 			$('.c_body').css('min-height', (window.innerHeight - 95) + 'px');
 			func && func();
 		});
 	}
 
 	function loadContent(ajax, callback) {
-		ajax = ajax || '__ajax/i/i_content_home.html';
+		ajax = ajax || '/__ajax/i/i_content_home.html';
 		loadAndReplaceContent('content', ajax, callback);
 	}
 
@@ -204,7 +204,7 @@ var loadPage = (function ($) {
 		' no-repeat fixed center top / cover');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_about2.html');
+		loadContent('/__ajax/i/i_content_about2.html');
 		loadFooter();
 	};
 
@@ -213,7 +213,7 @@ var loadPage = (function ($) {
 		' no-repeat  fixed center 3.5em ');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_first_season2.html');
+		loadContent('/__ajax/i/i_content_first_season2.html');
 		loadFooter();
 	};
 
@@ -222,7 +222,7 @@ var loadPage = (function ($) {
 		'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_terms.html');
+		loadContent('/__ajax/i/i_content_terms.html');
 		loadFooter();
 	};
 
@@ -231,7 +231,7 @@ var loadPage = (function ($) {
 		'tv5_comp_lp/homepage/background.jpg") no-repeat fixed center center / cover ');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_privacy.html');
+		loadContent('/__ajax/i/i_content_privacy.html');
 		loadFooter();
 	};
 
@@ -241,14 +241,14 @@ var loadPage = (function ($) {
 		//' no-repeat  top center fixed');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_press2.html');
+		loadContent('/__ajax/i/i_content_press2.html');
 		loadFooter();
 	};
 
 	my.contact = function () {
 		loadNav();
 		loadBg();
-		loadContent('__ajax/i/i_content_contact.html');
+		loadContent('/__ajax/i/i_content_contact.html');
 		loadFooter();
 	};
 
@@ -257,7 +257,7 @@ var loadPage = (function ($) {
 		' no-repeat  fixed center 3.5em ');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_app.html');
+		loadContent('/__ajax/i/i_content_app.html');
 		loadFooter();
 	};
 
@@ -266,7 +266,7 @@ var loadPage = (function ($) {
 		' no-repeat  fixed center 3.5em ');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_app2.html');
+		loadContent('/__ajax/i/i_content_app2.html');
 		loadFooter();
 	};
 
@@ -275,7 +275,7 @@ var loadPage = (function ($) {
 		'  no-repeat fixed center top / cover');
 		loadNav();
 		//loadBg();
-		loadContent('__ajax/i/i_content_app3.html');
+		loadContent('/__ajax/i/i_content_app3.html');
 		loadFooter();
 	};
     my.demo = function () {
@@ -283,7 +283,7 @@ var loadPage = (function ($) {
         '  no-repeat fixed center top / cover');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i/i_content_demo.html');
+        loadContent('/__ajax/i/i_content_demo.html');
         loadFooter();
     };
     my.fb = function () {
@@ -291,7 +291,7 @@ var loadPage = (function ($) {
         '  no-repeat fixed center top / cover');
         loadNav();
         //loadBg();
-        loadContent('__ajax/i/i_content_fb.html');
+        loadContent('/__ajax/i/i_content_fb.html');
         loadFooter();
     };
 
