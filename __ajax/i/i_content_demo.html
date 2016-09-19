@@ -1,16 +1,17 @@
 <style>
     #loader1 {position: absolute;left: 45%; top: 20%;width: 40px;}
     #youtube_video_img {width: 100%;}
+    .js-share-facebook {color: gray;}
 </style>
 <section class="site_width row about_box">
     <article class="col-xs-12 col-sm-6 ">
         <div style="width: 22em;" class="bc_brown05 fs_title">
             <div class="bc_brown05"></div>
-            <h1>U-STAR Application0</h1>
+            <h1>U-STAR Application</h1>
         </div>
     </article>
     <article class="col-xs-12 col-sm-6" style="padding-right:0px;">
-        <button class="js-share-facebook">share</button>
+        <button class="js-share-facebook">fb share</button>
        <div style="max-width: 420px;min-height: 700px" id="demo_app_box">
        </div>
     </article>
@@ -43,8 +44,9 @@
             action_properties: JSON.stringify({
                 object : {
                     'og:url': BASE_URL,
-                    'og:title': 'U-sTar',
-                    'og:description': 'ustar description',
+                    'og:title': $("meta[property='og:title']").attr("content") || 'U-sTar',
+                    'og:description': $("meta[property='og:description']").attr("content") ||
+                        'You want to become a U-STAR? Here is a chance to sing karaoke songs online and be part of karaoke entertainment party. Select a song and record your voice online.',
                     'og:og:image:width': '254',
                     'og:image:height': '90',
                     'og:image': 'http://be47b4b2b5f5e9da2da4-d3df4c08c94860389f24a50eee704af8.r44.cf1.rackcdn.com/international/img/u-star-logo_254x90_none_text.png'

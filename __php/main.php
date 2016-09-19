@@ -43,8 +43,10 @@ class Web_API extends Base
 	{
 		$entry_id = MysqlEscapeString($this->_eid);
 		if (!empty($entry_id)) {
-			$sql = "SELECT ce.*, s.* FROM song s
+			$sql = "SELECT b.*, u.*, ce.*, s.* FROM song s
 				JOIN competition_entry ce ON ce.song_id=s.song_id
+				JOIN user u ON s.user_id=u.user_id
+				JOIN base b ON s.base_id=b.base_id
 				WHERE  ce.entry_id = '" . $entry_id . "'";
 
 			$row = $this->sqlRow($sql);
@@ -67,8 +69,8 @@ class Web_API extends Base
 			'fb:app_id' => '1732472110298660',
 			'og:url' => $play_url,
 			'og:type' => 'website',
-			'og:title' => 'title',
-			'og:description' => 'description',
+			'og:title' => $song['artist'] . " : ".$song['title']."  // By: " . $song['username'],
+			'og:description' => 'You want to become a U-STAR? Here is a chance to sing karaoke songs online and be part of karaoke entertainment party. Select a song and record your voice online.',
 			'og:image' => $img_url
 		);
 		$replace = '';
